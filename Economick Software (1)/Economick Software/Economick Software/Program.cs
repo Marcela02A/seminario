@@ -13,7 +13,7 @@ namespace Economick_Software
     static class Program
     {
 
-        private static IServiceProvider ServiceProvider { get; set; }
+        public static IServiceProvider ServiceProvider { get; set; }
 
         /// <summary>
         /// Punto de entrada principal para la aplicación.
@@ -31,9 +31,13 @@ namespace Economick_Software
         private static void ConfigureServices()
         {
             ServiceCollection services = new ServiceCollection();
+
             services.AddTransient<Form1>();
+            services.AddTransient<Form3>();
+            services.AddTransient<Form4>();
             services.AddTransient<IUser, User>();
             services.AddScoped<EconomikContext>();
+
             ServiceProvider = services.BuildServiceProvider();
         }
     }

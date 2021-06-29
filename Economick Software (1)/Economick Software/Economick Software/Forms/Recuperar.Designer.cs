@@ -63,7 +63,7 @@ namespace OlvidoContraseña
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(47, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(45, 26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(229, 103);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -74,11 +74,11 @@ namespace OlvidoContraseña
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Buttercup Sample", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(317, -14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(625, 260);
+            this.label2.Size = new System.Drawing.Size(651, 135);
             this.label2.TabIndex = 13;
             this.label2.Text = "Recuperar ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -87,11 +87,11 @@ namespace OlvidoContraseña
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Green;
-            this.label3.Font = new System.Drawing.Font("Gill Sans MT Ext Condensed Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(635, 148);
+            this.label3.Location = new System.Drawing.Point(447, 149);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 50);
+            this.label3.Size = new System.Drawing.Size(299, 46);
             this.label3.TabIndex = 14;
             this.label3.Text = "CONTRASEÑA";
             // 

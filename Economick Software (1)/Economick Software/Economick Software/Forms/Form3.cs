@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Economick_Software.App;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace Economick_Software
         public Form3()
         {
             InitializeComponent();
+        }
+
+        private void menu1_Click(object sender, EventArgs e)
+        {
+            Controller.ChangeForm(this, sender as Economick_Software.Forms.Controls.Menu);
         }
     }
 }

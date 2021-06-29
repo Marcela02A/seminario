@@ -76,6 +76,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\Controller.cs" />
     <Compile Include="Bussiness\Interfaces\IUser.cs" />
     <Compile Include="Bussiness\User.cs" />
     <Compile Include="Data\EconomikContext.cs" />
@@ -101,6 +102,12 @@
     </Compile>
     <Compile Include="Forms\Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\DisenosAsignados.cs">
       <SubType>Form</SubType>
@@ -151,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DisenosAsignados.resx">
       <DependentUpon>DisenosAsignados.cs</DependentUpon>
