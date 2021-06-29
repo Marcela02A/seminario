@@ -165,7 +165,6 @@ namespace Economick_Software
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.BackgroundImage = global::Economick_Software.Properties.Resources._1dda26bbc0424889bd543d49d6e6af1c;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
