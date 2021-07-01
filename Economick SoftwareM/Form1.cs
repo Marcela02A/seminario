@@ -44,7 +44,7 @@ namespace Economick_Software
         {
             User.Add(new Data.Entities.UserInfo
             {
-                Nombres = "mara"
+                Nombres = textBox2.Text
             });
         }
 
