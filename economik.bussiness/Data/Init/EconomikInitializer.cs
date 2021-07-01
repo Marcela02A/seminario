@@ -13,12 +13,15 @@ namespace Economick_Software.Data.Init
         {
             if (context.Database.CreateIfNotExists())
             {
-                context.Users.Add(new Entities.UserInfo { Nombres = "jose" });
+                context.Users.Add(new Entities.UserInfo { Nombres = "jose", Contrasena = "123", Correo = "1234" });
                 context.Users.Add(new Entities.UserInfo { Apellidos = "hector" });
+
+                context.Ciudad.Add(new Entities.Ciudad { Latitud = 0, Longitud = 0, Nombres = "bogota" });
+
                 context.SaveChanges();
             }
-            base.InitializeDatabase(context);
 
+            base.InitializeDatabase(context);
         }
     }
 }

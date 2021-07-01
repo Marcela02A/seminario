@@ -1,5 +1,5 @@
 ﻿
-namespace Clientes
+namespace Economick_Software.Forms
 {
     partial class Clientes
     {

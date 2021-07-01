@@ -25,7 +25,6 @@ namespace Economick_Software.Data
         public DbSet<RolInfo> RolInfo { get; set; }
         public DbSet<TipoDocumento> TipoDocumento { get; set; }
         public DbSet<Ciudad> Ciudad { get; set; }
-
         public DbSet<Venta> Venta { get; set; }
         public DbSet<VentaProducto> VentaProducto { get; set; }
 

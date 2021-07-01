@@ -1,6 +1,7 @@
 ﻿using Economick_Software.Bussiness;
 using Economick_Software.Bussiness.Interfaces;
 using Economick_Software.Data;
+using Economick_Software.Forms;
 using economik.bussiness;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -36,6 +37,8 @@ namespace Economick_Software
             services.AddTransient<Form1>();
             services.AddTransient<Form3>();
             services.AddTransient<Form4>();
+            services.AddTransient<Recuperar>();
+
             RegisterDependency.Init(services);
 
             ServiceProvider = services.BuildServiceProvider();

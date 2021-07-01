@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OlvidoContraseña
+namespace Economick_Software.Forms
 {
-    public partial class Form1 : Form
+    public partial class Recuperar : Form
     {
-        public Form1()
+        public Recuperar()
         {
             InitializeComponent();
         }

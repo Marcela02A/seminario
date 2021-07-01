@@ -1,7 +1,7 @@
 ﻿
-namespace OlvidoContraseña
+namespace Economick_Software.Forms
 {
-    partial class Form1
+    partial class Recuperar
     {
         /// <summary>
         /// Variable del diseñador necesaria.

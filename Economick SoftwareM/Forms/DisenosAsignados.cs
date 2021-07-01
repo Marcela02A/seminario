@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DiseñosAsignados
+namespace Economick_Software.Forms
 {
     public partial class DisenosAsignados : Form
     {

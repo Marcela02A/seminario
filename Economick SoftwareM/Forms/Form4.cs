@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Economick_Software
+namespace Economick_Software.Forms
 {
     public partial class Form4 : Form
     {

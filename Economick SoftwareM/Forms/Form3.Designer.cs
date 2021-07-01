@@ -1,5 +1,5 @@
 ﻿
-namespace Economick_Software
+namespace Economick_Software.Forms
 {
     partial class Form3
     {
