@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Economick_Software.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,11 @@ namespace economik.console.Controllers
 {
     public class HomeController : Controller
     {
+        public HomeController()
+        {
+            string a = "a";
+        }
+
         public ActionResult Index()
         {
             return View();

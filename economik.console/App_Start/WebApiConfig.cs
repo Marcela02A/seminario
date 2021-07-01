@@ -1,4 +1,6 @@
-﻿using economik.console.App_Start;
+﻿using economik.bussiness;
+using economik.console.App_Start;
+using economik.console.Controllers;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -44,10 +46,15 @@ namespace economik.console
         {
             var services = new ServiceCollection();
 
-            services.AddControllersAsServices(typeof(WebApiConfig).Assembly.GetExportedTypes()
-                .Where(t => !t.IsAbstract && !t.IsGenericTypeDefinition)
-                .Where(t => typeof(IHttpController).IsAssignableFrom(t)
-                            || t.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)));
+            //services.AddControllersAsServices(typeof(WebApiConfig).Assembly.GetExportedTypes()
+            //    .Where(t => !t.IsAbstract && !t.IsGenericTypeDefinition)
+            //    .Where(t => typeof(IHttpController).IsAssignableFrom(t)
+            //                || t.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)));
+
+            RegisterDependency.Init(services);
+
+            services.AddTransient<HomeController>();
+            
 
             var serviceProvider = services.BuildServiceProvider();
 
