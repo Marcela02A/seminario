@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Economick_Software.Forms;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +11,10 @@ namespace Economick_Software.App
 {
     public static class Controller
     {
-        public static void ChangeForm(Form currentForm, Forms.Controls.Menu menu)
+        public static void ChangeForm(Form currentForm, Button button)
         {
             currentForm.Hide();
-            switch (menu.ActiveControl.Name)
+            switch (button.Name)
             {
                 case "button1":
                     Form3 form3 = Program.ServiceProvider.GetRequiredService<Form3>();
@@ -27,8 +28,14 @@ namespace Economick_Software.App
                     break;
 
             }
-            
-            
+        }
+
+        public static void ChangeForm<T>(Form currentForm) where T : Form
+        {
+            currentForm.Hide();
+            T form = Program.ServiceProvider.GetRequiredService<T>();
+            form.Closed += (s, arg) => currentForm.Close();
+            form.Show();
         }
     }
 }

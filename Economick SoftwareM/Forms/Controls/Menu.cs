@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Economick_Software.App;
 
 namespace Economick_Software.Forms.Controls
 {
@@ -24,7 +25,7 @@ namespace Economick_Software.Forms.Controls
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.OnClick(e);
+            Controller.ChangeForm(this.ParentForm, sender as Button);
         }
     }
 }

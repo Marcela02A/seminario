@@ -19,10 +19,11 @@ namespace Economick_Software.Data.Entities
         public string Apellidos { get; set; }
         public string Numero_documento { get; set; }
         public string Direccion { get; set; }
-        public string Contraseña { get; set; }
+        public string Contrasena { get; set; }
         public RolInfo Rol { get; set; }
         public Ciudad Ciudad { get; set; }
         public TipoDocumento Tipo_documento { get; set; }
+        public string Correo { get; set; }
     }
 
 

@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Economick_Software</RootNamespace>
     <AssemblyName>Economick Software</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -77,20 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App\Controller.cs" />
-    <Compile Include="Bussiness\Interfaces\IUser.cs" />
-    <Compile Include="Bussiness\User.cs" />
-    <Compile Include="Data\EconomikContext.cs" />
-    <Compile Include="Data\Entities\Ciudad.cs" />
-    <Compile Include="Data\Entities\Compania.cs" />
-    <Compile Include="Data\Entities\Compra.cs" />
-    <Compile Include="Data\Entities\CompraProducto.cs" />
-    <Compile Include="Data\Entities\Producto.cs" />
-    <Compile Include="Data\Entities\RolInfo.cs" />
-    <Compile Include="Data\Entities\TipoDocumento.cs" />
-    <Compile Include="Data\Entities\UserInfo.cs" />
-    <Compile Include="Data\Entities\Venta.cs" />
-    <Compile Include="Data\Entities\VentaProducto.cs" />
-    <Compile Include="Data\Init\EconomikInitializer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +210,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\economik.bussiness\economik.bussiness.csproj">
+      <Project>{259c6e85-faa8-4a6f-8414-dccfeef48d12}</Project>
+      <Name>economik.bussiness</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

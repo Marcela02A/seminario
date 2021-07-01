@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Clientes
+namespace Economick_Software.Forms
 {
     public partial class Clientes : Form
     {

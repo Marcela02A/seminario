@@ -1,5 +1,5 @@
 ﻿
-namespace Economick_Software
+namespace Economick_Software.Forms
 {
     partial class Form3
     {
@@ -151,7 +151,6 @@ namespace Economick_Software
             this.menu1.Name = "menu1";
             this.menu1.Size = new System.Drawing.Size(179, 227);
             this.menu1.TabIndex = 18;
-            this.menu1.Click += new System.EventHandler(this.menu1_Click);
             // 
             // Form3
             // 
@@ -167,6 +166,7 @@ namespace Economick_Software
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -1,4 +1,5 @@
 ﻿using Economick_Software.App;
+using Economick_Software.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,18 +10,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Economick_Software
+namespace Economick_Software.Forms
 {
     public partial class Form3 : Form
     {
-        public Form3()
+        private readonly EconomikContext context;
+        public Form3(EconomikContext context)
         {
             InitializeComponent();
-        }
 
-        private void menu1_Click(object sender, EventArgs e)
-        {
-            Controller.ChangeForm(this, sender as Economick_Software.Forms.Controls.Menu);
+            this.context = context;
         }
     }
 }

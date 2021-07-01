@@ -1,5 +1,5 @@
 ﻿
-namespace DiseñosAsignados
+namespace Economick_Software.Forms
 {
     partial class DisenosAsignados
     {
