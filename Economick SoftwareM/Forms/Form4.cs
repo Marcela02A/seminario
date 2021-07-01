@@ -18,10 +18,5 @@ namespace Economick_Software.Forms
         {
             InitializeComponent();
         }
-
-        private void menu1_Click(object sender, EventArgs e)
-        {
-            Controller.ChangeForm(this, sender as Economick_Software.Forms.Controls.Menu);
-        }
     }
 }

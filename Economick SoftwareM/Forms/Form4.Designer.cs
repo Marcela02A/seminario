@@ -92,7 +92,7 @@ namespace Economick_Software.Forms
             this.Aprobada,
             this.Facturada});
             this.dataGridView1.Location = new System.Drawing.Point(215, 213);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(853, 196);
@@ -160,7 +160,6 @@ namespace Economick_Software.Forms
             this.menu1.Name = "menu1";
             this.menu1.Size = new System.Drawing.Size(196, 422);
             this.menu1.TabIndex = 19;
-            this.menu1.Click += new System.EventHandler(this.menu1_Click);
             // 
             // Form4
             // 
@@ -174,8 +173,9 @@ namespace Economick_Software.Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
