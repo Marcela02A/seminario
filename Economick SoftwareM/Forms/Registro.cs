@@ -1,21 +1,28 @@
-﻿using System;
+﻿using Economick_Software.App;
+using Economick_Software.Bussiness.Interfaces;
+using Economick_Software.Data;
+using Economick_Software.Data.Entities;
+using Economick_Software.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-namespace ecomarck2
-{
-    public partial class Form1 : Form
+namespace Economick_Software.Forms
+{ 
+    public partial class Registro : Form
     {
-        public Form1()
+        private readonly EconomikContext context;
+        public Registro(EconomikContext context)
         {
-
             InitializeComponent();
+            this.context = context;
         }
 
 
@@ -54,6 +61,40 @@ namespace ecomarck2
         private void Button1_Click(object sender, EventArgs e)
         {
             validarCampos(this);
+            String ciudad, tipod,rol;
+            ciudad = Convert.ToString(combobox_ciudad.SelectedItem);
+            tipod = Convert.ToString(combobox_documento);
+            rol = Convert.ToString(combobox_rol);
+
+            context.Users.Add(new UserInfo
+            {
+                Nombres = campo_nombre.Text,
+                Apellidos = campo_apellido.Text,
+                Numero_documento = campo_documento.Text,
+                Correo = campo_correo.Text,
+                Direccion = campo_direccion.Text,
+                Contrasena = campo_contraseña.Text,
+                Ciudad = new Ciudad
+                {
+                    Nombres=ciudad,
+                },
+                Rol=new RolInfo
+                {
+                    descripcion= rol,
+                },
+                Tipo_documento= new TipoDocumento
+                {
+                    Descripcion=tipod,
+                }
+          
+
+            });
+            context.SaveChanges();
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -18,5 +18,20 @@ namespace Economick_Software.Forms
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menu1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

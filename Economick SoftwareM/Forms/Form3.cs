@@ -21,5 +21,20 @@ namespace Economick_Software.Forms
 
             this.context = context;
         }
+
+        private void menu1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menu2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
