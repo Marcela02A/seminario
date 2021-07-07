@@ -96,5 +96,10 @@ namespace Economick_Software.Forms
         {
 
         }
+
+        private void Registro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

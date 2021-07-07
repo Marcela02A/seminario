@@ -21,7 +21,7 @@ namespace Economick_Software.Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Controller.ChangeForm<Inicio>(this);
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -30,6 +30,11 @@ namespace Economick_Software.Forms
         }
 
         private void menu1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

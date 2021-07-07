@@ -30,5 +30,20 @@ namespace Economick_Software.Forms
         {
             Controller.ChangeForm<Form1>(this);
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

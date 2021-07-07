@@ -34,15 +34,15 @@ namespace Economick_Software.Forms
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
+            this.menu2 = new Economick_Software.Forms.Controls.Menu();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Impresion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Acabados_Graficos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Embalaje = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Finalizado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
-            this.menu2 = new Economick_Software.Forms.Controls.Menu();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -98,41 +98,6 @@ namespace Economick_Software.Forms
             this.dataGridView1.Size = new System.Drawing.Size(918, 202);
             this.dataGridView1.TabIndex = 16;
             // 
-            // Item
-            // 
-            this.Item.HeaderText = "Item";
-            this.Item.MinimumWidth = 6;
-            this.Item.Name = "Item";
-            this.Item.Width = 125;
-            // 
-            // Impresion
-            // 
-            this.Impresion.HeaderText = "Impresion";
-            this.Impresion.MinimumWidth = 6;
-            this.Impresion.Name = "Impresion";
-            this.Impresion.Width = 125;
-            // 
-            // Acabados_Graficos
-            // 
-            this.Acabados_Graficos.HeaderText = "Acabados_Graficos";
-            this.Acabados_Graficos.MinimumWidth = 6;
-            this.Acabados_Graficos.Name = "Acabados_Graficos";
-            this.Acabados_Graficos.Width = 125;
-            // 
-            // Embalaje
-            // 
-            this.Embalaje.HeaderText = "Embalaje";
-            this.Embalaje.MinimumWidth = 6;
-            this.Embalaje.Name = "Embalaje";
-            this.Embalaje.Width = 125;
-            // 
-            // Finalizado
-            // 
-            this.Finalizado.HeaderText = "Finalizado";
-            this.Finalizado.MinimumWidth = 6;
-            this.Finalizado.Name = "Finalizado";
-            this.Finalizado.Width = 125;
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.DarkGreen;
@@ -145,6 +110,7 @@ namespace Economick_Software.Forms
             this.button3.TabIndex = 17;
             this.button3.Text = "Regresar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // menu2
             // 
@@ -183,6 +149,46 @@ namespace Economick_Software.Forms
             this.label3.TabIndex = 23;
             this.label3.Text = "DE COMPRA";
             // 
+            // Item
+            // 
+            this.Item.DataPropertyName = "Item";
+            this.Item.HeaderText = "Item";
+            this.Item.MinimumWidth = 6;
+            this.Item.Name = "Item";
+            this.Item.Width = 125;
+            // 
+            // Impresion
+            // 
+            this.Impresion.DataPropertyName = "Impresion";
+            this.Impresion.HeaderText = "Impresion";
+            this.Impresion.MinimumWidth = 6;
+            this.Impresion.Name = "Impresion";
+            this.Impresion.Width = 125;
+            // 
+            // Acabados_Graficos
+            // 
+            this.Acabados_Graficos.DataPropertyName = "Acabados_Graficos";
+            this.Acabados_Graficos.HeaderText = "Acabados_Graficos";
+            this.Acabados_Graficos.MinimumWidth = 6;
+            this.Acabados_Graficos.Name = "Acabados_Graficos";
+            this.Acabados_Graficos.Width = 125;
+            // 
+            // Embalaje
+            // 
+            this.Embalaje.DataPropertyName = "Embalaje";
+            this.Embalaje.HeaderText = "Embalaje";
+            this.Embalaje.MinimumWidth = 6;
+            this.Embalaje.Name = "Embalaje";
+            this.Embalaje.Width = 125;
+            // 
+            // Finalizado
+            // 
+            this.Finalizado.DataPropertyName = "Finalizado";
+            this.Finalizado.HeaderText = "Finalizado";
+            this.Finalizado.MinimumWidth = 6;
+            this.Finalizado.Name = "Finalizado";
+            this.Finalizado.Width = 125;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,13 +222,13 @@ namespace Economick_Software.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button3;
+        private Controls.Menu menu2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Item;
         private System.Windows.Forms.DataGridViewTextBoxColumn Impresion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Acabados_Graficos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Embalaje;
         private System.Windows.Forms.DataGridViewTextBoxColumn Finalizado;
-        private Controls.Menu menu2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
     }
 }

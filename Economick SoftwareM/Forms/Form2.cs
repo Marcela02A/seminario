@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Economick_Software.App;
 
 namespace Economick_Software.Forms
 {
@@ -15,11 +16,22 @@ namespace Economick_Software.Forms
         public Form2()
         {
             InitializeComponent();
+            
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Controller.ChangeForm<Registro>(this);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha enviado la Orden de Compra a su correo electronico");
         }
     }
 }

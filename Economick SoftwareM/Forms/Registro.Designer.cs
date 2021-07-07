@@ -29,7 +29,7 @@ namespace Economick_Software.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro));
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.check_info = new System.Windows.Forms.CheckBox();
             this.check_terminos = new System.Windows.Forms.CheckBox();
@@ -376,7 +376,7 @@ namespace Economick_Software.Forms
             this.pictureBox2.TabIndex = 58;
             this.pictureBox2.TabStop = false;
             // 
-            // Form1
+            // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -412,8 +412,9 @@ namespace Economick_Software.Forms
             this.Controls.Add(this.campo_apellido);
             this.Controls.Add(this.campo_nombre);
             this.Controls.Add(this.PictureBox1);
-            this.Name = "Form1";
+            this.Name = "Registro";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Registro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

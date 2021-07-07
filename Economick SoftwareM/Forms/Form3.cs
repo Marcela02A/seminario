@@ -36,5 +36,10 @@ namespace Economick_Software.Forms
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Controller.ChangeForm<Inicio>(this);
+        }
     }
 }

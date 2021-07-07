@@ -34,16 +34,16 @@ namespace Economick_Software.Forms
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
+            this.menu1 = new Economick_Software.Forms.Controls.Menu();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Realizada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Enviada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Aprobada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Facturada = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
-            this.menu1 = new Economick_Software.Forms.Controls.Menu();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -99,48 +99,7 @@ namespace Economick_Software.Forms
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(837, 222);
             this.dataGridView1.TabIndex = 17;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Recibida";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "En Proceso";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
-            // 
-            // Realizada
-            // 
-            this.Realizada.HeaderText = "Realizada";
-            this.Realizada.MinimumWidth = 6;
-            this.Realizada.Name = "Realizada";
-            this.Realizada.Width = 125;
-            // 
-            // Enviada
-            // 
-            this.Enviada.HeaderText = "Enviada";
-            this.Enviada.MinimumWidth = 6;
-            this.Enviada.Name = "Enviada";
-            this.Enviada.Width = 125;
-            // 
-            // Aprobada
-            // 
-            this.Aprobada.HeaderText = "Aprobada";
-            this.Aprobada.MinimumWidth = 6;
-            this.Aprobada.Name = "Aprobada";
-            this.Aprobada.Width = 125;
-            // 
-            // Facturada
-            // 
-            this.Facturada.HeaderText = "Facturada";
-            this.Facturada.MinimumWidth = 6;
-            this.Facturada.Name = "Facturada";
-            this.Facturada.Width = 125;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button3
             // 
@@ -192,6 +151,54 @@ namespace Economick_Software.Forms
             this.label3.TabIndex = 23;
             this.label3.Text = "DE COTIZACIÓN";
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Recibida";
+            this.Column1.HeaderText = "Recibida";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "En Proceso";
+            this.Column2.HeaderText = "En Proceso";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // Realizada
+            // 
+            this.Realizada.DataPropertyName = "Realizada";
+            this.Realizada.HeaderText = "Realizada";
+            this.Realizada.MinimumWidth = 6;
+            this.Realizada.Name = "Realizada";
+            this.Realizada.Width = 125;
+            // 
+            // Enviada
+            // 
+            this.Enviada.DataPropertyName = "Enviada";
+            this.Enviada.HeaderText = "Enviada";
+            this.Enviada.MinimumWidth = 6;
+            this.Enviada.Name = "Enviada";
+            this.Enviada.Width = 125;
+            // 
+            // Aprobada
+            // 
+            this.Aprobada.DataPropertyName = "Aprobada";
+            this.Aprobada.HeaderText = "Aprobada";
+            this.Aprobada.MinimumWidth = 6;
+            this.Aprobada.Name = "Aprobada";
+            this.Aprobada.Width = 125;
+            // 
+            // Facturada
+            // 
+            this.Facturada.DataPropertyName = "Facturada";
+            this.Facturada.HeaderText = "Facturada";
+            this.Facturada.MinimumWidth = 6;
+            this.Facturada.Name = "Facturada";
+            this.Facturada.Width = 125;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,15 +232,15 @@ namespace Economick_Software.Forms
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button3;
+        private Forms.Controls.Menu menu1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Realizada;
         private System.Windows.Forms.DataGridViewTextBoxColumn Enviada;
         private System.Windows.Forms.DataGridViewTextBoxColumn Aprobada;
         private System.Windows.Forms.DataGridViewTextBoxColumn Facturada;
-        private System.Windows.Forms.Button button3;
-        private Forms.Controls.Menu menu1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
     }
 }

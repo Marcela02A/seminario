@@ -85,6 +85,7 @@ namespace Economick_Software.Forms
             this.Button1.TabIndex = 3;
             this.Button1.Text = "Inicio";
             this.Button1.UseVisualStyleBackColor = false;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // Button2
             // 
@@ -97,6 +98,7 @@ namespace Economick_Software.Forms
             this.Button2.TabIndex = 4;
             this.Button2.Text = "Quienes somos";
             this.Button2.UseVisualStyleBackColor = false;
+            this.Button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // ComboBox1
             // 
@@ -160,6 +162,7 @@ namespace Economick_Software.Forms
             this.Button6.TabIndex = 9;
             this.Button6.Text = "Fac";
             this.Button6.UseVisualStyleBackColor = false;
+            this.Button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // Panel1
             // 
