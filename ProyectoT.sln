@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1525
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Economick SoftwareM", "Economick SoftwareM\Economick SoftwareM.csproj", "{D7ED9AA6-22C9-42F8-860E-C136E091CB9F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "economik.console", "economik.console\economik.console.csproj", "{2BC304FA-3547-4724-8635-D10CBD1C68EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "economik.bussiness", "economik.bussiness\economik.bussiness.csproj", "{259C6E85-FAA8-4A6F-8414-DCCFEEF48D12}"
 EndProject
@@ -19,10 +17,6 @@ Global
 		{D7ED9AA6-22C9-42F8-860E-C136E091CB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7ED9AA6-22C9-42F8-860E-C136E091CB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7ED9AA6-22C9-42F8-860E-C136E091CB9F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2BC304FA-3547-4724-8635-D10CBD1C68EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2BC304FA-3547-4724-8635-D10CBD1C68EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2BC304FA-3547-4724-8635-D10CBD1C68EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2BC304FA-3547-4724-8635-D10CBD1C68EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{259C6E85-FAA8-4A6F-8414-DCCFEEF48D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{259C6E85-FAA8-4A6F-8414-DCCFEEF48D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{259C6E85-FAA8-4A6F-8414-DCCFEEF48D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
