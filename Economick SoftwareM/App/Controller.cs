@@ -22,7 +22,7 @@ namespace Economick_Software.App
                     form3.Show();
                     break;
                 case "button2":
-                    Form4 form4 = Program.ServiceProvider.GetRequiredService<Form4>();
+                    Clientes form4 = Program.ServiceProvider.GetRequiredService<Clientes>();
                     form4.Closed += (s, arg) => currentForm.Close();
                     form4.Show();
                     break;
