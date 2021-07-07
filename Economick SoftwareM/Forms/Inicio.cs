@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Economick_Software.App;
+using Economick_Software.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +10,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ecomark1
+namespace Economick_Software.Forms
 {
-    public partial class Form1 : Form
+    public partial class Inicio : Form
     {
-        public Form1()
+        private readonly EconomikContext context;
+        public Inicio(EconomikContext context)
         {
             InitializeComponent();
+            this.context = context;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            Controller.ChangeForm<Form1>(this);
         }
     }
 }

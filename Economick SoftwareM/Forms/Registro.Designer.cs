@@ -1,7 +1,7 @@
 ﻿
-namespace ecomarck2
+namespace Economick_Software.Forms
 {
-    partial class Form1
+    partial class Registro
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -31,7 +31,6 @@ namespace ecomarck2
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Label12 = new System.Windows.Forms.Label();
             this.check_info = new System.Windows.Forms.CheckBox();
             this.check_terminos = new System.Windows.Forms.CheckBox();
             this.Label11 = new System.Windows.Forms.Label();
@@ -57,7 +56,11 @@ namespace ecomarck2
             this.campo_apellido = new System.Windows.Forms.TextBox();
             this.campo_nombre = new System.Windows.Forms.TextBox();
             this.Button1 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // PictureBox1
@@ -70,16 +73,6 @@ namespace ecomarck2
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox1.TabIndex = 2;
             this.PictureBox1.TabStop = false;
-            // 
-            // Label12
-            // 
-            this.Label12.AutoSize = true;
-            this.Label12.Font = new System.Drawing.Font("Palatino Linotype", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label12.Location = new System.Drawing.Point(545, 64);
-            this.Label12.Name = "Label12";
-            this.Label12.Size = new System.Drawing.Size(121, 37);
-            this.Label12.TabIndex = 30;
-            this.Label12.Text = "Registro";
             // 
             // check_info
             // 
@@ -107,112 +100,123 @@ namespace ecomarck2
             // Label11
             // 
             this.Label11.AutoSize = true;
+            this.Label11.BackColor = System.Drawing.Color.Transparent;
             this.Label11.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label11.Location = new System.Drawing.Point(696, 342);
             this.Label11.Name = "Label11";
-            this.Label11.Size = new System.Drawing.Size(78, 21);
+            this.Label11.Size = new System.Drawing.Size(82, 21);
             this.Label11.TabIndex = 52;
-            this.Label11.Text = "Dirección";
+            this.Label11.Text = "Dirección:";
             // 
             // Label10
             // 
             this.Label10.AutoSize = true;
+            this.Label10.BackColor = System.Drawing.Color.Transparent;
             this.Label10.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label10.Location = new System.Drawing.Point(696, 284);
             this.Label10.Name = "Label10";
-            this.Label10.Size = new System.Drawing.Size(62, 21);
+            this.Label10.Size = new System.Drawing.Size(66, 21);
             this.Label10.TabIndex = 51;
-            this.Label10.Text = "Ciudad";
+            this.Label10.Text = "Ciudad:";
             // 
             // Label9
             // 
             this.Label9.AutoSize = true;
+            this.Label9.BackColor = System.Drawing.Color.Transparent;
             this.Label9.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label9.Location = new System.Drawing.Point(696, 227);
             this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(174, 21);
+            this.Label9.Size = new System.Drawing.Size(178, 21);
             this.Label9.TabIndex = 50;
-            this.Label9.Text = "Confirmacion de correo";
+            this.Label9.Text = "Confirmacion de correo:";
             // 
             // Label8
             // 
             this.Label8.AutoSize = true;
+            this.Label8.BackColor = System.Drawing.Color.Transparent;
             this.Label8.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label8.Location = new System.Drawing.Point(696, 172);
             this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(169, 21);
+            this.Label8.Size = new System.Drawing.Size(173, 21);
             this.Label8.TabIndex = 49;
-            this.Label8.Text = "Numero de documento";
+            this.Label8.Text = "Número de documento:";
             // 
             // Label7
             // 
             this.Label7.AutoSize = true;
+            this.Label7.BackColor = System.Drawing.Color.Transparent;
             this.Label7.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label7.Location = new System.Drawing.Point(696, 113);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(143, 21);
+            this.Label7.Size = new System.Drawing.Size(147, 21);
             this.Label7.TabIndex = 48;
-            this.Label7.Text = "Tipo de documento";
+            this.Label7.Text = "Tipo de documento:";
             // 
             // Label6
             // 
             this.Label6.AutoSize = true;
+            this.Label6.BackColor = System.Drawing.Color.Transparent;
             this.Label6.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label6.Location = new System.Drawing.Point(252, 398);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(207, 21);
+            this.Label6.Size = new System.Drawing.Size(211, 21);
             this.Label6.TabIndex = 47;
-            this.Label6.Text = "Confirmacion de contraseña";
+            this.Label6.Text = "Confirmación de contraseña:";
             // 
             // Label5
             // 
             this.Label5.AutoSize = true;
+            this.Label5.BackColor = System.Drawing.Color.Transparent;
             this.Label5.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label5.Location = new System.Drawing.Point(252, 342);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(91, 21);
+            this.Label5.Size = new System.Drawing.Size(95, 21);
             this.Label5.TabIndex = 46;
-            this.Label5.Text = "Contraseña";
+            this.Label5.Text = "Contraseña:";
             // 
             // Label4
             // 
             this.Label4.AutoSize = true;
+            this.Label4.BackColor = System.Drawing.Color.Transparent;
             this.Label4.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label4.Location = new System.Drawing.Point(252, 284);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(34, 21);
+            this.Label4.Size = new System.Drawing.Size(38, 21);
             this.Label4.TabIndex = 45;
-            this.Label4.Text = "Rol";
+            this.Label4.Text = "Rol:";
             // 
             // Label3
             // 
             this.Label3.AutoSize = true;
+            this.Label3.BackColor = System.Drawing.Color.Transparent;
             this.Label3.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label3.Location = new System.Drawing.Point(252, 227);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(138, 21);
+            this.Label3.Size = new System.Drawing.Size(142, 21);
             this.Label3.TabIndex = 44;
-            this.Label3.Text = "Correo electronico";
+            this.Label3.Text = "Correo electronico:";
             // 
             // Label2
             // 
             this.Label2.AutoSize = true;
+            this.Label2.BackColor = System.Drawing.Color.Transparent;
             this.Label2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label2.Location = new System.Drawing.Point(252, 172);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(70, 21);
+            this.Label2.Size = new System.Drawing.Size(74, 21);
             this.Label2.TabIndex = 43;
-            this.Label2.Text = "Apellido";
+            this.Label2.Text = "Apellido:";
             // 
             // Label1
             // 
             this.Label1.AutoSize = true;
+            this.Label1.BackColor = System.Drawing.Color.Transparent;
             this.Label1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label1.Location = new System.Drawing.Point(252, 113);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(67, 21);
+            this.Label1.Size = new System.Drawing.Size(71, 21);
             this.Label1.TabIndex = 42;
-            this.Label1.Text = "Nombre";
+            this.Label1.Text = "Nombre:";
             // 
             // combobox_documento
             // 
@@ -334,6 +338,44 @@ namespace ecomarck2
             this.Button1.UseVisualStyleBackColor = false;
             this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(360, -7);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(427, 108);
+            this.label12.TabIndex = 56;
+            this.label12.Text = "Registro ";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Green;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(729, 52);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(182, 37);
+            this.label13.TabIndex = 57;
+            this.label13.Text = "USUARIOS";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1002, 21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(170, 80);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 58;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -341,6 +383,9 @@ namespace ecomarck2
             this.BackColor = System.Drawing.Color.LightGreen;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.Button1);
             this.Controls.Add(this.check_info);
             this.Controls.Add(this.check_terminos);
@@ -366,11 +411,11 @@ namespace ecomarck2
             this.Controls.Add(this.campo_correo);
             this.Controls.Add(this.campo_apellido);
             this.Controls.Add(this.campo_nombre);
-            this.Controls.Add(this.Label12);
             this.Controls.Add(this.PictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,7 +424,6 @@ namespace ecomarck2
         #endregion
 
         internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.Label Label12;
         internal System.Windows.Forms.CheckBox check_info;
         internal System.Windows.Forms.CheckBox check_terminos;
         internal System.Windows.Forms.Label Label11;
@@ -405,6 +449,9 @@ namespace ecomarck2
         internal System.Windows.Forms.TextBox campo_apellido;
         internal System.Windows.Forms.TextBox campo_nombre;
         internal System.Windows.Forms.Button Button1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        internal System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

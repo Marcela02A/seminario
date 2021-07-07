@@ -1,7 +1,7 @@
 ﻿
-namespace ecomark1
+namespace Economick_Software.Forms
 {
-    partial class Form1
+    partial class Inicio
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@ namespace ecomark1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.Button1 = new System.Windows.Forms.Button();
             this.Button2 = new System.Windows.Forms.Button();
@@ -135,6 +135,7 @@ namespace ecomark1
             this.Button4.TabIndex = 7;
             this.Button4.Text = "Ingresar";
             this.Button4.UseVisualStyleBackColor = false;
+            this.Button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // Button5
             // 
@@ -321,11 +322,12 @@ namespace ecomark1
             this.Label6.TabIndex = 8;
             this.Label6.Text = "Contactanos";
             // 
-            // Form1
+            // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1184, 561);
             this.Controls.Add(this.Panel4);
             this.Controls.Add(this.Panel3);
@@ -339,8 +341,9 @@ namespace ecomark1
             this.Controls.Add(this.Button2);
             this.Controls.Add(this.Button1);
             this.Controls.Add(this.PictureBox1);
-            this.Name = "Form1";
+            this.Name = "Inicio";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.Panel1.ResumeLayout(false);
             this.Panel1.PerformLayout();

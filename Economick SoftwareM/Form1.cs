@@ -38,19 +38,19 @@ namespace Economick_Software
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Controller.ChangeForm<Recuperar>(this);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Controller.ChangeForm<Registro>(this);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             if (context.Users.Any(x => x.Correo == textBox2.Text && x.Contrasena == textBox1.Text))
             {
-                Controller.ChangeForm<Form3>(this);
+                Controller.ChangeForm<Clientes>(this);
             }
             else
             {
@@ -134,6 +134,11 @@ namespace Economick_Software
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
