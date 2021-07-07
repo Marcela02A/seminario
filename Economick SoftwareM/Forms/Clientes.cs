@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Economick_Software.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace Economick_Software.Forms
 {
     public partial class Clientes : Form
     {
-        public Clientes()
+        private readonly EconomikContext Context;
+        public Clientes(EconomikContext context)
         {
+            Context = context;
             InitializeComponent();
+            LoadDataGrid();
+        }
+
+        private void LoadDataGrid()
+        {
+            dataGridView1.DataSource = Context.Users.ToList();
         }
     }
 }
