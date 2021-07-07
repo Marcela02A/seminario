@@ -1,4 +1,5 @@
-﻿using Economick_Software.App;
+<?xml version="1.0" encoding="utf-8"?>
+using Economick_Software.App;
 using Economick_Software.Bussiness.Interfaces;
 using Economick_Software.Data;
 using Economick_Software.Data.Entities;
@@ -22,6 +23,7 @@ namespace Economick_Software.Forms
         private readonly EconomikContext context;
         public Clientes(EconomikContext context)
         {
+            Context = context;
             InitializeComponent();
             this.context = context;
         }

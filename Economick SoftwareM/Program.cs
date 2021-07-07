@@ -37,6 +37,7 @@ namespace Economick_Software
             services.AddTransient<Form1>();
             services.AddTransient<Form3>();
             services.AddTransient<Form4>();
+            services.AddTransient<Clientes>();
             services.AddTransient<Recuperar>();
             services.AddTransient<Registro>();
             services.AddTransient<Clientes>();
