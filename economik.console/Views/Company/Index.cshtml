@@ -1,0 +1,36 @@
+﻿@model  List<Economick_Software.Data.Entities.Compania>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Nit</th>
+                    <th scope="col">Dirección</th>
+                    <th scope="col">Rol</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Nombres</td>
+                        <td>@item.Nit</td>
+                        <td>@item.Direccion</td>
+                        <td>@item.Rol?.descripcion</td>
+                        <td>
+                            <a class="btn btn-primary" href="~/company/edit/@item.Id" role="button">Editar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

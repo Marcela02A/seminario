@@ -1,0 +1,57 @@
+﻿@model economik.console.Controllers.DTO.CompanyDTO
+
+<div class="row">
+    <div class="col-12">
+        <form action="~/Company/Edit/@Model.Id" method="post">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Nombre</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Nombre" name="model.Nombres" value="@Model.Nombres" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Nit</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="Nit" name="model.Nit" value="@Model.Nit">
+                </div>
+            </div>
+            <div class="form-group col-md-12">
+                <label for="inputAddress">Dirreción</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="model.Direccion" value="@Model.Direccion" />
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Ciudad</label>
+                    <select id="inputState" class="form-control" name="model.CiudadId">
+                        @foreach (var item in Model.Cities)
+                        {
+                            if (Model.CiudadId == item.Id)
+                            {
+                                <option value="@item.Id" selected>@item.Value</option>
+                            }
+                            else
+                            {
+                                <option value="@item.Id">@item.Value</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputState">Rol</label>
+                    <select id="inputState" class="form-control" name="model.RolId">
+                        @foreach (var item in Model.Roles)
+                        {
+                            if (Model.CiudadId == item.Id)
+                            {
+                                <option value="@item.Id" selected>@item.Value</option>
+                            }
+                            else
+                            {
+                                <option value="@item.Id">@item.Value</option>
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+    </div>
+</div>

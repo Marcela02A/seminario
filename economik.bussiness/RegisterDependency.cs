@@ -15,7 +15,7 @@ namespace economik.bussiness
         public static void Init(ServiceCollection services)
         {
             services.AddTransient<IUser, User>();
-            services.AddScoped<EconomikContext>();
+            services.AddTransient<EconomikContext>();
         }
     }
 }

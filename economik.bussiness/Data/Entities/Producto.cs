@@ -17,7 +17,7 @@ namespace Economick_Software.Data.Entities
         public string Nombres { get; set; }
         public string Descripcion { get; set; }
         public string Codigo { get; set; }
-        public long precio { get; set; }
+        public long Precio { get; set; }
         public int  Stock { get; set; }
     }
 }

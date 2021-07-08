@@ -1,0 +1,127 @@
+﻿@{
+    Layout = null;
+}
+
+@model economik.console.Controllers.DTO.UserDTO
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Message</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a href="~/home/login" class="navbar-brand">Economik</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-12">
+            <form method="post" @Url.Action("Register", "Home")>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Nombre</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Nombre" name="model.Name" required/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Apellidos</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="Apellidos" name="model.LastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Correo</label>
+                        <input type="email" class="form-control" id="inputAddress" placeholder="a@a.com" name="model.Email" required/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputState">Confirmar correo</label>
+                        <input type="email" class="form-control" id="inputAddress" placeholder="a@a.com" required/>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Contraseña</label>
+                        <input type="password" class="form-control" id="inputAddress" placeholder="*****" name="model.Password" required />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputState">Confirmar Contraseña</label>
+                        <input type="password" class="form-control" id="inputAddress" placeholder="*****"  required/>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Tipo de documento</label>
+                        <select id="inputState" class="form-control" name="model.DocumentType">
+                            @foreach (var item in Model.DocumentList)
+                            {
+                                <option value="@item.Id">@item.Value</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputState">Documento</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="103289654" name="model.Document" />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Ciudad</label>
+                        <select id="inputState" class="form-control" name="model.CityId">
+                            @foreach (var item in Model.Cities)
+                            {
+                                <option value="@item.Id">@item.Value</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputState">Rol</label>
+                        <select id="inputState" class="form-control" name="model.RolId">
+                            @foreach (var item in Model.Roles)
+                            {
+                                <option value="@item.Id">@item.Value</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <div class="col-md-12">
+                            <input type="checkbox" class="form-check-input" id="conditions" required>
+                            <label class="form-check-label" for="conditions">Acepto terminos y condiciones</label>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="checkbox" class="form-check-input" id="infoMail" name="model.InfoMail">
+                            <label class="form-check-label" for="infoMail">Recibir información por correo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputState">Dirección</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="CRA 24 #65-85" name="model.Address" />
+                </div>
+                <button type="submit" class="btn btn-primary float-right" style="float: right;margin-right: 15px;">Registrarme</button>
+            </form>
+        </div>
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.Error
+            </div>
+        }
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>
